@@ -6,9 +6,9 @@
     font-family: "Poppins", system-ui;
 }
 
- /* body { 
-    background-color: black;
-} */
+ body { 
+    background-color: #e3e3e3
+}
 
 .interface{
     max-width: 1280px;
@@ -16,15 +16,18 @@
 
 }
 
-header .btn-contato button, .hero-site button {
-    width: 140px;
-    height: 50px;
+header .btn-contato button, .hero-site button, .gatos button {
     font-size: 18px;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     cursor: pointer;
     transition: .5s;
+}
+header .btn-contato button:hover, .hero-site button:hover, .gatos button:hover{
+    background-color: #fff;
+    color: #000;
+
 }
 
 /* ESTILO DO HEADER */
@@ -75,11 +78,7 @@ header .btn-contato button{
 
 }   
 
-header .btn-contato button:hover, .hero-site button:hover{
-    background-color: #fff;
-    color: #000;
 
-}
 
 /* Estilo do Hero */
 section.hero-site{
@@ -143,8 +142,107 @@ section.vantagens{
 
 }
 .itens-container .txt-itens h3 span{
-    font-weight: 200;
-    line-height: 50px;
+    font-weight: 300;
+    
 }
-    
-    
+/* Estilo dos Botões de Contato */
+section.Contato{
+    background-color: #fff;
+    padding: 80px 0;
+
+}
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.Contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.Contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.Contato .icons-contato a{
+    text-decoration: none;
+}
+
+.Contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: .5s;
+}
+.Contato .icons-contato button i{
+    font-size: 20px;
+}
+.Contato .icons-contato button:hover{
+    background-color: #000;
+}
+.Contato .icons-contato button:hover i{
+    color: #fff;
+}
+.Contato .icons-contato button:hover i, .Contato .icons-contato button:hover p{
+    color: #fff;
+}
+/* Estilo da Sessão dos gatinhos */
+section.gatos{
+    height: 600px;
+
+    background-image: url(../img/gato\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    color: #fff;
+    text-align: center;
+
+}
+
+.gatos > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000b9;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.gatos > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+.gatos h3{
+    font-size: 3em;
+    line-height: 50px;
+
+}
+.gatos h3 span{
+    display: block;
+
+}
+.gatos button{
+    width: 220px;
+    height: 60px;
+}
